@@ -20,6 +20,9 @@ repositories {
 
 dependencies {
     compileOnly("io.papermc.paper:paper-api:1.21.8-R0.1-SNAPSHOT")
+    compileOnly 'com.fasterxml.jackson.core:jackson-core:2.20.0-rc1' // to fix vulnerability WS-2022-0468, Score: 7.5
+    compileOnly 'net.minidev:json-smart:2.6.0'  // to fix vulnerability CVE-2024-57699, Score: 7.5
+    compileOnly 'org.apache.commons:commons-lang3:3.18.0' // to fix vulnerability CVE-2025-48924, Score: 5.3
     paperweightDevelopmentBundle("io.papermc.paper:dev-bundle:1.21.8-R0.1-SNAPSHOT")
 }
 
